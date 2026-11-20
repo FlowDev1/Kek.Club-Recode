@@ -1,16 +1,16 @@
-#include "Initializer.h"
+#include "Initializer.hpp"
 
-#include "../Client/Client.h"
-#include "../Client/Command/CommandManager.h"
-#include "../Client/Configs/ConfigManager.h"
-#include "../Client/Module/ModuleManager.h"
-#include "../SDK/mc/deps/core/mce/ServerTexture.h"
-#include "../Hooking/HookManager.h"
-#include "../SDK/SDK.h"
-#include "../Signatures/SigManager.h"
-#include "../Utils/Files.h"
-#include "../Utils/Rendering/MaterialStorage.h"
-#include "../Utils/Time.h"
+#include "../Client/Client.hpp"
+#include "../Client/Command/CommandManager.hpp"
+#include "../Client/Configs/ConfigManager.hpp"
+#include "../Client/Module/ModuleManager.hpp"
+#include "../SDK/mc/deps/core/mce/ServerTexture.hpp"
+#include "../Hooking/HookManager.hpp"
+#include "../SDK/SDK.hpp"
+#include "../Signatures/SigManager.hpp"
+#include "../Utils/Files.hpp"
+#include "../Utils/Rendering/MaterialStorage.hpp"
+#include "../Utils/Time.hpp"
 
 DWORD WINAPI Initializer::ejectThread(LPVOID) {
     FreeLibraryAndExitThread(hinstDLL, 0);

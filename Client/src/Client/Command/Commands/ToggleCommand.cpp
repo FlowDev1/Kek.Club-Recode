@@ -1,7 +1,7 @@
-#include "ToggleCommand.h"
+#include "ToggleCommand.hpp"
 
-#include "../../../Utils/Text.h"
-#include "../../Module/ModuleManager.h"
+#include "../../../Utils/Text.hpp"
+#include "../../Module/ModuleManager.hpp"
 
 ToggleCommand::ToggleCommand(const entt::handle handle) : Command(handle, "command.togglecommand.name"_i18n, "command.togglecommand.description"_i18n) {
     addAlias("command.togglecommand.alias.enable"_i18n);

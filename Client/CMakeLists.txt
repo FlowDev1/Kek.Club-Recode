@@ -1,4 +1,4 @@
-file(GLOB_RECURSE CLIENT_SOURCES CONFIGURE_DEPENDS "src/*.cpp" "src/*.h")
+file(GLOB_RECURSE CLIENT_SOURCES CONFIGURE_DEPENDS "src/*.cpp" "src/*.hpp")
 
 add_library(Client SHARED
 	${CLIENT_SOURCES}

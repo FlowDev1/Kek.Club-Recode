@@ -1,8 +1,8 @@
-#include "ModuleManager.h"
+#include "ModuleManager.hpp"
 
-#include "../Event/EventManager.h"
-#include "../Configs/ConfigManager.h"
-#include "Modules/TestModule.h"
+#include "../Event/EventManager.hpp"
+#include "../Configs/ConfigManager.hpp"
+#include "Modules/TestModule.hpp"
 
 void ModuleManager::initModules() {
     logF("Initializing modules...");

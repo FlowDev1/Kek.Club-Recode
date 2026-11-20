@@ -1,4 +1,4 @@
-#include "SigManager.h"
+#include "SigManager.hpp"
 
 void SigManager::scanAllSignatures() {
     std::vector<std::future<void>> futures;

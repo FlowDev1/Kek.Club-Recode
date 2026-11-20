@@ -1,9 +1,9 @@
-#include "HookManager.h"
+#include "HookManager.hpp"
 
-#include "Hooks/ClientHooks.h"
-#include "Hooks/PacketHooks.h"
-#include "Hooks/ScreenHooks.h"
-#include "Hooks/TickHooks.h"
+#include "Hooks/ClientHooks.hpp"
+#include "Hooks/PacketHooks.hpp"
+#include "Hooks/ScreenHooks.hpp"
+#include "Hooks/TickHooks.hpp"
 
 std::unordered_map<Hook::Function, std::unique_ptr<Hook>> HookManager::hooks{};
 

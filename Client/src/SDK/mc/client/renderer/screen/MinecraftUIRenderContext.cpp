@@ -1,6 +1,6 @@
-#include "MinecraftUIRenderContext.h"
+#include "MinecraftUIRenderContext.hpp"
 
-#include "../../../../../Utils/Memory.h"
+#include "../../../../../Utils/Memory.hpp"
 
 ScreenContext* MinecraftUIRenderContext::getScreenContext() {
     return hat::member_at<ScreenContext*>(this, 0x10); // It is a reference, but libhat currently does not support that

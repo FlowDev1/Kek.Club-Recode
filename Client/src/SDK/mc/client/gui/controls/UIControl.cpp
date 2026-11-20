@@ -1,4 +1,4 @@
-#include "UIControl.h"
+#include "UIControl.hpp"
 
 std::string UIControl::getName() {
     return hat::member_at<std::string>(this, 0x20);

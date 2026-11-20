@@ -1,4 +1,4 @@
-#include "HelpCommand.h"
+#include "HelpCommand.hpp"
 
 HelpCommand::HelpCommand(const entt::handle handle) : Command(handle, "Help", "Helps with the usage of commands and modules") {}
 

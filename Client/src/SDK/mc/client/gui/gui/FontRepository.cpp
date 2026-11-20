@@ -1,4 +1,4 @@
-#include "FontRepository.h"
+#include "FontRepository.hpp"
 
 uint64_t FontRepository::getFontIdentifier(const std::string& fontName) {
     return fontNameToIdentifier[fontName];

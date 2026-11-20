@@ -1,7 +1,7 @@
-#include "TestModule.h"
+#include "TestModule.hpp"
 
-#include "../../Event/EventManager.h"
-#include "../../../Renderer/Renderer.h"
+#include "../../Event/EventManager.hpp"
+#include "../../../Renderer/Renderer.hpp"
 
 TestModule::TestModule(const entt::handle handle) : Module(handle, "module.testmodule.name"_i18n, 0, Category::CLIENT, "module.testmodule.description"_i18n) {
     addSetting<int>("module.testmodule.int_test.name"_i18n, intVal, 1, 10, "module.testmodule.int_test.description"_i18n);

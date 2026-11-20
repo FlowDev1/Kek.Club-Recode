@@ -1,9 +1,9 @@
-#include "Patch.h"
+#include "Patch.hpp"
 
 #include <libhat/MemoryProtector.hpp>
 
-#include "Logger.h"
-#include "Memory.h"
+#include "Logger.hpp"
+#include "Memory.hpp"
 
 Patch::Patch(const uintptr_t addr, const std::initializer_list<std::byte> newBytes, const bool enable) {
     this->address = addr;

@@ -1,6 +1,6 @@
-#include "MeshHelpers.h"
+#include "MeshHelpers.hpp"
 
-#include "../../../../Signatures/SigManager.h"
+#include "../../../../Signatures/SigManager.hpp"
 
 /* Having a constant ClientTexture reference parameter and a variant parameter in this function doesn't make sense.
 Additionally, trying to use a texture in the above function resulting in a crash doesn't make sense either.

@@ -1,4 +1,4 @@
-#include "Command.h"
+#include "Command.hpp"
 
 Command::Command(const entt::handle handle, const std::string& commandName, const std::string& description) : handle(handle), name(commandName), description(description) {}
 

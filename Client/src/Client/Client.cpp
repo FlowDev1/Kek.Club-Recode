@@ -1,9 +1,9 @@
-#include "Client.h"
+#include "Client.hpp"
 
-#include "../Initialization/Initializer.h"
-#include "../SDK/SDK.h"
-#include "../Utils/Time.h"
-#include "Event/EventManager.h"
+#include "../Initialization/Initializer.hpp"
+#include "../SDK/SDK.hpp"
+#include "../Utils/Time.hpp"
+#include "Event/EventManager.hpp"
 
 bool Client::isKeyDown(const unsigned char key) const {
     return this->keys[key];

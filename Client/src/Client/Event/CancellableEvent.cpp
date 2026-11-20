@@ -1,4 +1,4 @@
-#include "CancellableEvent.h"
+#include "CancellableEvent.hpp"
 
 void CancellableEvent::setCancelled(const bool cancelled) {
     this->cancelled = cancelled;

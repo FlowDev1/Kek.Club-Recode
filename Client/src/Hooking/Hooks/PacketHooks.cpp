@@ -1,15 +1,15 @@
-#include "PacketHooks.h"
+#include "PacketHooks.hpp"
 
-#include "../../SDK/mc/common/network/Packet.h"
-#include "../../SDK/mc/common/network/NetEventCallback.h"
-#include "../../SDK/mc/common/network/NetworkIdentifier.h"
-#include "../../SDK/mc/network/MinecraftPackets.h"
+#include "../../SDK/mc/common/network/Packet.hpp"
+#include "../../SDK/mc/common/network/NetEventCallback.hpp"
+#include "../../SDK/mc/common/network/NetworkIdentifier.hpp"
+#include "../../SDK/mc/network/MinecraftPackets.hpp"
 
-#include "../../SDK/SDK.h"
-#include "../HookManager.h"
-#include "../../Client/Event/EventManager.h"
-#include "../../Client/Event/Events/PacketReceiveEvent.h"
-#include "../../Client/Event/Events/PacketSendEvent.h"
+#include "../../SDK/SDK.hpp"
+#include "../HookManager.hpp"
+#include "../../Client/Event/EventManager.hpp"
+#include "../../Client/Event/Events/PacketReceiveEvent.hpp"
+#include "../../Client/Event/Events/PacketSendEvent.hpp"
 
 namespace {
     template <MinecraftPacketIds PacketId>

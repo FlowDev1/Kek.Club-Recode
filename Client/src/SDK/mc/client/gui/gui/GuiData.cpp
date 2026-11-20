@@ -1,7 +1,7 @@
-#include "GuiData.h"
+#include "GuiData.hpp"
 
-#include "../../../../../Offsets/OffsetManager.h"
-#include "../../../../../Signatures/SigManager.h"
+#include "../../../../../Offsets/OffsetManager.hpp"
+#include "../../../../../Signatures/SigManager.hpp"
 
 ScreenSizeData& GuiData::getScreenSizeData() {
     return hat::member_at<ScreenSizeData>(this, GET_OFFSET("GuiData::mcResolution"));

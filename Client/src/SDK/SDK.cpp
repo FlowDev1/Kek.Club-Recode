@@ -1,9 +1,9 @@
-#include "SDK.h"
+#include "SDK.hpp"
 
-#include "../Signatures/SigManager.h"
+#include "../Signatures/SigManager.hpp"
 
-#include "../Utils/Memory.h"
-#include "../Utils/Text.h"
+#include "../Utils/Memory.hpp"
+#include "../Utils/Text.hpp"
 
 MainView* SDK::mainView = nullptr;
 Bedrock::Platform_UWP* SDK::platformUWP = nullptr;

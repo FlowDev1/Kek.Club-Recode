@@ -1,5 +1,5 @@
-#include "ScreenContext.h"
-#include "../../../../../Offsets/OffsetManager.h"
+#include "ScreenContext.hpp"
+#include "../../../../../Offsets/OffsetManager.hpp"
 
 mce::Clock& ScreenContext::getClock() {
     return *hat::member_at<mce::Clock*>(this, 0xC0);

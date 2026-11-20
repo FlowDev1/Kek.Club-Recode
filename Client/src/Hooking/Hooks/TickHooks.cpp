@@ -1,13 +1,13 @@
-#include "TickHooks.h"
+#include "TickHooks.hpp"
 
-#include "../../Signatures/SigManager.h"
-#include "../../Utils/Memory.h"
-#include "../HookManager.h"
+#include "../../Signatures/SigManager.hpp"
+#include "../../Utils/Memory.hpp"
+#include "../HookManager.hpp"
 
-#include "../../Client/Event/EventManager.h"
-#include "../../Client/Event/Events/ClientTickEvent.h"
-#include "../../Client/Event/Events/GameTickEvent.h"
-#include "../../SDK/SDK.h"
+#include "../../Client/Event/EventManager.hpp"
+#include "../../Client/Event/Events/ClientTickEvent.hpp"
+#include "../../Client/Event/Events/GameTickEvent.hpp"
+#include "../../SDK/SDK.hpp"
 
 namespace {
     void Minecraft_tick(Minecraft* _this) {

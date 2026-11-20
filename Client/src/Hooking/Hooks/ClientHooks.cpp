@@ -1,14 +1,14 @@
-#include "ClientHooks.h"
+#include "ClientHooks.hpp"
 
-#include "../HookManager.h"
-#include "../../Client/Client.h"
-#include "../../Signatures/SigManager.h"
+#include "../HookManager.hpp"
+#include "../../Client/Client.hpp"
+#include "../../Signatures/SigManager.hpp"
 
-#include "../../Client/Event/EventManager.h"
-#include "../../Client/Event/Events/KeyEvent.h"
-#include "../../Client/Event/Events/MouseEvent.h"
+#include "../../Client/Event/EventManager.hpp"
+#include "../../Client/Event/Events/KeyEvent.hpp"
+#include "../../Client/Event/Events/MouseEvent.hpp"
 
-#include "../../SDK/mc/client/input/MouseDevice.h"
+#include "../../SDK/mc/client/input/MouseDevice.hpp"
 
 namespace {
     void Keyboard_feed(unsigned char keyCode, int state) {

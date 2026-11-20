@@ -1,4 +1,4 @@
-#include "CommandArguments.h"
+#include "CommandArguments.hpp"
 
 std::string CommandArguments::operator[](const size_t index) const {
     return args[index];

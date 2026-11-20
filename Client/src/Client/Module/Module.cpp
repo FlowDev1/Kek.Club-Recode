@@ -1,4 +1,4 @@
-#include "Module.h"
+#include "Module.hpp"
 
 Module::Module(const entt::handle handle, const std::string& moduleName, const unsigned char key, const Category category, const std::string& description) : handle(handle), name(moduleName), key(key), category(category), description(description) {}
 

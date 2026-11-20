@@ -1,6 +1,6 @@
-#include "Tessellator.h"
+#include "Tessellator.hpp"
 
-#include "../../../../Signatures/SigManager.h"
+#include "../../../../Signatures/SigManager.hpp"
 
 void Tessellator::begin(const mce::PrimitiveMode mode, const int maxVertices) {
     static auto begin = Memory::getFunction<&Tessellator::begin>(GET_SIGNATURE("Tessellator::begin"));

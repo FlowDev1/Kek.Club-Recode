@@ -1,3 +1,3 @@
-#include "EventManager.h"
+#include "EventManager.hpp"
 
 EventManager eventMgr;

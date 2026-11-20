@@ -1,6 +1,6 @@
-#include "Minecraft.h"
+#include "Minecraft.hpp"
 
-#include "../../../../Utils/Memory.h"
+#include "../../../../Utils/Memory.hpp"
 
 std::unique_ptr<GameSession>& Minecraft::getGameSession() {
     return hat::member_at<std::unique_ptr<GameSession>>(this, 0xC8);

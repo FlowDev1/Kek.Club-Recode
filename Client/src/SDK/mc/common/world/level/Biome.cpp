@@ -1,6 +1,6 @@
-#include "Biome.h"
+#include "Biome.hpp"
 
-#include "../../../../../Offsets/OffsetManager.h"
+#include "../../../../../Offsets/OffsetManager.hpp"
 
 int16_t Biome::getId() const {
     return hat::member_at<const int16_t>(this, GET_OFFSET("Biome::id"));

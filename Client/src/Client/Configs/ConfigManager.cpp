@@ -1,9 +1,9 @@
-#include "ConfigManager.h"
+#include "ConfigManager.hpp"
 
-#include "../../Utils/Files.h"
-#include "../Event/EventManager.h"
-#include "../Event/Events/ConfigLoadEvent.h"
-#include "../Event/Events/ConfigSaveEvent.h"
+#include "../../Utils/Files.hpp"
+#include "../Event/EventManager.hpp"
+#include "../Event/Events/ConfigLoadEvent.hpp"
+#include "../Event/Events/ConfigSaveEvent.hpp"
 
 void ConfigManager::initConfigManager() {
     logF("Initializing configs...");

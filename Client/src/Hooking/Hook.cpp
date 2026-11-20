@@ -1,4 +1,4 @@
-#include "Hook.h"
+#include "Hook.hpp"
 
 Hook::Hook(const uintptr_t targetFunction, const Function callbackFunction, const Type type)
     : handle(safetyhook::InlineHook::create(reinterpret_cast<Function>(targetFunction), callbackFunction,

@@ -1,6 +1,6 @@
-#include "Logger.h"
+#include "Logger.hpp"
 
-#include "Files.h"
+#include "Files.hpp"
 
 void Logger::initializeLogger() {
     logger = spdlog::basic_logger_mt("recode_logger", Files::getRecodeFolder() + "logs.txt");

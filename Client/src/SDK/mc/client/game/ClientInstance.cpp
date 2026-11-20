@@ -1,4 +1,4 @@
-#include "ClientInstance.h"
+#include "ClientInstance.hpp"
 
 Minecraft* ClientInstance::getMinecraft() {
     return hat::member_at<std::unique_ptr<Minecraft>>(this, 0xD8).get();

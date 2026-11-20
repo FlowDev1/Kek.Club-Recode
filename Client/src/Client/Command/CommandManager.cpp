@@ -1,11 +1,11 @@
-#include "CommandManager.h"
+#include "CommandManager.hpp"
 
-#include "Commands/TestCommand.h"
-#include "Commands/ToggleCommand.h"
-#include "Commands/HelpCommand.h"
+#include "Commands/TestCommand.hpp"
+#include "Commands/ToggleCommand.hpp"
+#include "Commands/HelpCommand.hpp"
 
-#include "../../Utils/Text.h"
-#include "../Event/EventManager.h"
+#include "../../Utils/Text.hpp"
+#include "../Event/EventManager.hpp"
 
 void CommandManager::initCommands() {
     logF("Initializing commands...");

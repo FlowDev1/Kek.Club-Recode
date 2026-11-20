@@ -1,6 +1,6 @@
-#include "Packet.h"
+#include "Packet.hpp"
 
-#include "../../../../Utils/Memory.h"
+#include "../../../../Utils/Memory.hpp"
 
 MinecraftPacketIds Packet::getId() const {
     return Memory::callVFunc<1, MinecraftPacketIds()>(this);

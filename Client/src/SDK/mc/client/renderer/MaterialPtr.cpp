@@ -1,8 +1,8 @@
-#include "MaterialPtr.h"
+#include "MaterialPtr.hpp"
 
-#include "RenderMaterialGroup.h"
-#include "../../../../Utils/Memory.h"
-#include "../../../../Signatures/SigManager.h"
+#include "RenderMaterialGroup.hpp"
+#include "../../../../Utils/Memory.hpp"
+#include "../../../../Signatures/SigManager.hpp"
 
 std::shared_ptr<mce::MaterialPtr> mce::MaterialPtr::getMaterial(const HashedString& name) {
     static const auto signature = GET_SIGNATURE("mce::RenderMaterialGroup::common");

@@ -1,4 +1,4 @@
-#include "MatrixStack.h"
+#include "MatrixStack.hpp"
 
 MatrixStack::MatrixStackRef MatrixStack::push() {
     this->isDirty = true;

@@ -1,4 +1,4 @@
-#include "ScreenView.h"
+#include "ScreenView.hpp"
 
 VisualTree* ScreenView::getVisualTree() {
     return hat::member_at<std::unique_ptr<VisualTree>>(this, 0x48).get();

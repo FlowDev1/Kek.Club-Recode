@@ -1,10 +1,10 @@
-#include "Renderer.h"
+#include "Renderer.hpp"
 
-#include "../SDK/SDK.h"
-#include "../SDK/mc/client/renderer/MeshHelpers.h"
-#include "../Utils/Files.h"
-#include "../Utils/Math/Math.h"
-#include "../Utils/Rendering/MaterialStorage.h"
+#include "../SDK/SDK.hpp"
+#include "../SDK/mc/client/renderer/MeshHelpers.hpp"
+#include "../Utils/Files.hpp"
+#include "../Utils/Math/Math.hpp"
+#include "../Utils/Rendering/MaterialStorage.hpp"
 
 void Renderer::update(ScreenView* screenView, UIRenderContext* uiRenderContext) {
     SDK::screenView = screenView;

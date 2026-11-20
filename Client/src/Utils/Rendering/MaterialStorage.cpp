@@ -1,4 +1,4 @@
-#include "MaterialStorage.h"
+#include "MaterialStorage.hpp"
 
 void MaterialStorage::init() {
     magic_enum::enum_for_each<Material>([this](const Material material) {

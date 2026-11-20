@@ -1,21 +1,21 @@
-#include "ScreenHooks.h"
+#include "ScreenHooks.hpp"
 
-#include "../../SDK/mc/client/gui/screens/ScreenView.h"
-#include "../../SDK/mc/client/renderer/Mesh.h"
-#include "../../SDK/mc/client/renderer/ViewRenderData.h"
-#include "../../SDK/mc/client/renderer/NameTagRenderObject.h"
-#include "../../SDK/mc/client/renderer/screen/UIRenderContext.h"
-#include "../../SDK/mc/client/renderer/screen/MinecraftUIRenderContext.h"
-#include "../../SDK/mc/client/gui/screens/models/ClientInstanceScreenModel.h"
+#include "../../SDK/mc/client/gui/screens/ScreenView.hpp"
+#include "../../SDK/mc/client/renderer/Mesh.hpp"
+#include "../../SDK/mc/client/renderer/ViewRenderData.hpp"
+#include "../../SDK/mc/client/renderer/NameTagRenderObject.hpp"
+#include "../../SDK/mc/client/renderer/screen/UIRenderContext.hpp"
+#include "../../SDK/mc/client/renderer/screen/MinecraftUIRenderContext.hpp"
+#include "../../SDK/mc/client/gui/screens/models/ClientInstanceScreenModel.hpp"
 
-#include "../HookManager.h"
-#include "../../Renderer/Renderer.h"
-#include "../../Signatures/SigManager.h"
+#include "../HookManager.hpp"
+#include "../../Renderer/Renderer.hpp"
+#include "../../Signatures/SigManager.hpp"
 
-#include "../../Client/Event/EventManager.h"
-#include "../../Client/Event/Events/ChatSendEvent.h"
-#include "../../Client/Event/Events/PreRenderEvent.h"
-#include "../../Client/Event/Events/PostRenderEvent.h"
+#include "../../Client/Event/EventManager.hpp"
+#include "../../Client/Event/Events/ChatSendEvent.hpp"
+#include "../../Client/Event/Events/PreRenderEvent.hpp"
+#include "../../Client/Event/Events/PostRenderEvent.hpp"
 
 namespace {
     ClientInstanceScreenModel::ChatMessageRestrictions ClientInstanceScreenModel_sendChatMessage(ClientInstanceScreenModel* _this, const std::string& message) {

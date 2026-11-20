@@ -1,4 +1,4 @@
-#include "Initializer.h"
+#include "Initializer.hpp"
 
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID) {
     if (fdwReason == DLL_PROCESS_ATTACH) {

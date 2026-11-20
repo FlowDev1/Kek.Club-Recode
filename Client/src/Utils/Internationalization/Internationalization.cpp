@@ -1,7 +1,7 @@
-#include "Internationalization.h"
+#include "Internationalization.hpp"
 
-#include "../Files.h"
-#include "../Text.h"
+#include "../Files.hpp"
+#include "../Text.hpp"
 
 std::string Internationalization::directory{};
 std::unordered_map<Internationalization::Translation, nlohmann::json> Internationalization::translationFiles{};

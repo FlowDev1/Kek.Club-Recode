@@ -1,4 +1,4 @@
-#include "TestCommand.h"
+#include "TestCommand.hpp"
 
 TestCommand::TestCommand(const entt::handle handle) : Command(handle, "command.testcommand.name", "command.testcommand.description") {
     addAlias("command.testcommand.alias.t");

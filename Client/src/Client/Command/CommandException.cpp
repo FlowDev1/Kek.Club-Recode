@@ -1,4 +1,4 @@
-#include "CommandException.h"
+#include "CommandException.hpp"
 
 CommandException::CommandException(const ArgumentParser::ParseError error) {
     switch (error) {

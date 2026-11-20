@@ -1,7 +1,7 @@
-#include "Font.h"
+#include "Font.hpp"
 
-#include "../../../../../Utils/Memory.h"
-#include "../../../../../Signatures/SigManager.h"
+#include "../../../../../Utils/Memory.hpp"
+#include "../../../../../Signatures/SigManager.hpp"
 
 int Font::getLineLength(const std::string& str, float fontSize, bool showColorSymbol) {
     return Memory::callVFunc<6, &Font::getLineLength>(this, str, fontSize, showColorSymbol);
