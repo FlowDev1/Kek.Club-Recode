@@ -6,6 +6,6 @@
 namespace mce {
     class RenderMaterialGroup {
     public:
-        MaterialPtr* getMaterial(const HashedString& name);
+        std::shared_ptr<MaterialPtr> getMaterial(const HashedString& name);
     };
 }

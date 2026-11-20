@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../CancellableEvent.h"
-#include "../../SDK/mc/common/network/Packet.h"
+#include "../../../SDK/mc/common/network/Packet.h"
 
 class PacketSendEvent : public CancellableEvent {
 public:

@@ -1,11 +1,12 @@
 #include "ScreenContext.h"
+#include "../../../../../Offsets/OffsetManager.h"
 
 mce::Clock& ScreenContext::getClock() {
     return *hat::member_at<mce::Clock*>(this, 0xC0);
 }
 
 Tessellator& ScreenContext::getTessellator() {
-    return *hat::member_at<Tessellator*>(this, 0xC8);
+    return *hat::member_at<Tessellator*>(this, GET_OFFSET("ScreenContext::tessellator"));
 }
 
 ShaderColor& ScreenContext::getCurrentShaderColor() {

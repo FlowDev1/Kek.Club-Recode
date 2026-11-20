@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ECS/EntityId.h"
+#include "../ECS/EntityId.h"
 
 class EntityRegistry : std::enable_shared_from_this<EntityRegistry> {
 public:

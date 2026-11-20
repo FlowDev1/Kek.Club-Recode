@@ -20,7 +20,7 @@ public:
     template <auto callback>
     static decltype(auto) getReturn() {
         auto* const newCallback = reinterpret_cast<Hook::Function>(callback);
-        return reinterpret_cast<decltype(callback)>(getHook(newCallback).trampolineFunction);
+        return getHook(newCallback).handle.original<decltype(callback)>();
     }
 
     static void destroy();

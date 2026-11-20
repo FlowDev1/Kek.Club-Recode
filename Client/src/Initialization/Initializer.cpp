@@ -18,7 +18,6 @@ DWORD WINAPI Initializer::ejectThread(LPVOID) {
 
 void Initializer::initializeClient(const HMODULE hinstDLL) {
     Initializer::hinstDLL = hinstDLL;
-    ClientAssert(MH_Initialize() == MH_OK, "MH_Initialize returned a non-MH_OK status");
 
     const auto startTime = Time::getCurrentTime();
 
@@ -57,7 +56,6 @@ void Initializer::ejectClient() {
     commandMgr.disable();
     HookManager::toggleAllGlobalHooks(false);
     HookManager::destroy();
-    ClientAssert(MH_Uninitialize() == MH_OK, "MH_Uninitialize returned a non-MH_OK status");
 
     Utils::displayToastNotification("Recode", "Uninjected!", 3);
 

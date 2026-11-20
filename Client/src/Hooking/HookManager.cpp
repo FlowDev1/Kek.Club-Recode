@@ -17,9 +17,8 @@ void HookManager::initializeHooks() {
 void HookManager::toggleAllGlobalHooks(const bool enable) {
     for (const auto& hook : std::views::values(hooks)) {
         if (hook->type == Hook::Type::Global)
-            enable ? hook->enableHookQueued() : hook->disableHookQueued();
+            enable ? hook->enableHook() : hook->disableHook();
     }
-    MH_ApplyQueued();
 }
 
 Hook& HookManager::getHook(const Hook::Function func) {

@@ -3,7 +3,7 @@
 class Text {
 public:
     static std::string toHexAddress(const auto* ptr) {
-        return fmt::format("0x{:X}", reinterpret_cast<uintptr_t>(ptr));
+        return std::format("0x{:X}", reinterpret_cast<uintptr_t>(ptr));
     }
 
     static std::vector<std::string> splitString(const std::string_view& str, char delimiter) {

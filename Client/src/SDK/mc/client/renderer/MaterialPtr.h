@@ -5,6 +5,6 @@
 namespace mce {
     class MaterialPtr {
     public:
-        static MaterialPtr* getMaterial(const HashedString& name);
+        static std::shared_ptr<MaterialPtr> getMaterial(const HashedString& name);
     };
 }

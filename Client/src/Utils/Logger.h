@@ -22,14 +22,14 @@ public:
 
     template <typename... Args>
     static void log(const std::string& text, Args... args) {
-        const std::string formatted = fmt::vformat(text, fmt::make_format_args(args...));
-        logger->info(formatted);
+        const std::string formatted = std::vformat(text, std::make_format_args(args...));
+        logger->info("{}", formatted);
         logsToPrint.emplace_back(formatted, Level::Debug);
     }
 
     template <typename... Args>
     static void logToChat(const std::string& text, Args... args) {
-        const std::string formatted = fmt::vformat(text, fmt::make_format_args(args...));
+        const std::string formatted = std::vformat(text, std::make_format_args(args...));
         logsToPrint.emplace_back(formatted, Level::Info);
     }
 

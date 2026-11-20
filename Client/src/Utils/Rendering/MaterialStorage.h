@@ -14,7 +14,7 @@ public:
     mce::MaterialPtr* getMaterial(Material material);
 
 private:
-    std::unordered_map<Material, mce::MaterialPtr*> materials{};
+    std::unordered_map<Material, std::shared_ptr<mce::MaterialPtr>> materials{};
 };
 
 extern MaterialStorage materialStorage;

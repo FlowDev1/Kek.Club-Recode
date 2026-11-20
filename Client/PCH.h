@@ -1,6 +1,9 @@
 #pragma once
 
 #define WIN32_LEAN_AND_MEAN
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
 #include <Windows.h>
 
 #include <filesystem>
@@ -36,7 +39,6 @@
 #include <winrt/Windows.UI.Notifications.h>
 #include <winrt/Windows.ApplicationModel.Core.h>
 
-#include <MinHook.h>
 #include <magic_enum/magic_enum.hpp>
 #include <magic_enum/magic_enum_utility.hpp>
 #include <libhat/Access.hpp>

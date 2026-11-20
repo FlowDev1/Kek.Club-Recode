@@ -1,9 +1,10 @@
 #include "GuiData.h"
 
+#include "../../../../../Offsets/OffsetManager.h"
 #include "../../../../../Signatures/SigManager.h"
 
 ScreenSizeData& GuiData::getScreenSizeData() {
-    return hat::member_at<ScreenSizeData>(this, 0x30);
+    return hat::member_at<ScreenSizeData>(this, GET_OFFSET("GuiData::mcResolution"));
 }
 
 void GuiData::displayClientMessage(const std::string& message, std::optional<std::string> replaceWith, bool unknown) {

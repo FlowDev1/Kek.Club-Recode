@@ -36,7 +36,7 @@ void Client::onGameTick(const GameTickEvent&) {
         if (level == Logger::Level::Info)
             SDK::guiData->displayClientMessage(log);
         else if (level == Logger::Level::Debug) {
-            const std::string formatted = fmt::format("{}{}{} {}", ColorFormat::GOLD, Time::getTimestamp(), ColorFormat::RESET, log);
+            const std::string formatted = std::format("{}{}{} {}", ColorFormat::GOLD, Time::getTimestamp(), ColorFormat::RESET, log);
             SDK::guiData->displayClientMessage(formatted);
         }
     }

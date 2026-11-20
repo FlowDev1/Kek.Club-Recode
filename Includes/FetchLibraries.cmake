@@ -1,9 +1,9 @@
 include(FetchContent)
 
 FetchContent_Declare(
-        minhook
-        GIT_REPOSITORY https://github.com/TsudaKageyu/minhook.git
-        GIT_TAG c1a7c3843bd1a5fe3eb779b64c0d823bca3dc339
+        safetyhook
+        GIT_REPOSITORY https://github.com/cursey/safetyhook.git
+        GIT_TAG c3f3f306a0f12d1811c0b713ad2ed2a8ddc6cf55
 )
 
 FetchContent_Declare(
@@ -14,20 +14,14 @@ FetchContent_Declare(
 
 FetchContent_Declare(
         entt
-        GIT_REPOSITORY https://github.com/Borion-Updated/entt.git # Using specialized fork because of entt::type_info normally leaking names
-        GIT_TAG 36d0212ba103d0d8da6ca4a589ae2de773647f34
+        GIT_REPOSITORY https://github.com/skypjack/entt.git
+        GIT_TAG fe8d7d78c4823e8a66a050bf86f5c6318cf76ce7
 )
 
 FetchContent_Declare(
         magic_enum
         GIT_REPOSITORY https://github.com/Neargye/magic_enum.git
         GIT_TAG 1a1824df7ac798177a521eed952720681b0bf482
-)
-
-FetchContent_Declare(
-        zasm
-        GIT_REPOSITORY https://github.com/zyantific/zasm.git
-        GIT_TAG b14c1b36c9bb453d8eb3a5b2cc180233f0e54a7a
 )
 
 FetchContent_Declare(
@@ -42,12 +36,13 @@ FetchContent_Declare(
         GIT_TAG 33b4a621a697a305bc3a7610d290677b96beb181
 )
 
+set(SPDLOG_USE_STD_FORMAT ON CACHE BOOL "Use the C++ standard formatter" FORCE)
+
 FetchContent_MakeAvailable(
-        minhook
+        safetyhook
         libhat
         entt
         magic_enum
-        zasm
         spdlog
         glm
 )

@@ -2,6 +2,6 @@
 
 #include "../../../../Utils/Memory.h"
 
-mce::MaterialPtr* mce::RenderMaterialGroup::getMaterial(const HashedString& name) {
+std::shared_ptr<mce::MaterialPtr> mce::RenderMaterialGroup::getMaterial(const HashedString& name) {
     return Memory::callVFunc<1, &RenderMaterialGroup::getMaterial>(this, name);
 }

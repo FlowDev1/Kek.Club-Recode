@@ -7,7 +7,7 @@ void MaterialStorage::init() {
 }
 
 mce::MaterialPtr* MaterialStorage::getMaterial(const Material material) {
-    return materials[material];
+    return materials[material].get();
 }
 
 MaterialStorage materialStorage;

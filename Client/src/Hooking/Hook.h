@@ -1,5 +1,7 @@
 #pragma once
 
+#include <safetyhook/inline_hook.hpp>
+
 class Hook {
 public:
     using Function = void*;
@@ -9,17 +11,12 @@ public:
         Modular
     };
 
-    bool isEnabled = false;
+    safetyhook::InlineHook handle;
     Type type = Type::Global;
-    Function targetFunction = nullptr;
     Function callbackFunction = nullptr;
-    Function trampolineFunction = nullptr;
 
     Hook(uintptr_t targetFunction, Function callbackFunction, Type type = Type::Global);
-    ~Hook();
 
     void enableHook();
     void disableHook();
-    void enableHookQueued();
-    void disableHookQueued();
 };
